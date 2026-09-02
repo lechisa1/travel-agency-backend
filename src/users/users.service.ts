@@ -9,7 +9,6 @@ import { UpdateUserDto } from './dto/update-user.dto';
 import { QueryUserDto } from './dto/query-user.dto';
 import { Prisma } from '@prisma/client';
 import * as bcrypt from 'bcrypt';
-import { AssignRolesDto } from './dto/assign-roles.dto';
 const SALT_ROUNDS = 10;
 
 // Reusable select scope to exclude password_hash automatically

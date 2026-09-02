@@ -96,6 +96,9 @@
     ],
     "coverageDirectory": "../coverage",
     "testEnvironment": "node",
-    "transformIgnorePatterns": ["/node_modules/(?!@nestjs/passport)"]
+    "transformIgnorePatterns": ["/node_modules/(?!@nestjs/passport)"],
+    "moduleNameMapper": {
+      "^src/(.*)$": "<rootDir>/$1"
+    }
   }
 }

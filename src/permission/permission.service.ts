@@ -1,7 +1,5 @@
 import { Injectable } from '@nestjs/common';
 import { PrismaService } from 'src/database/prisma.service';
-import { Prisma } from '@prisma/client';
-import { PermissionQueryDto } from './dto/permission-query.dto';
 
 @Injectable()
 export class PermissionService {

@@ -49,7 +49,7 @@ export class RoleService {
     return role;
   }
 
-  async findAll(query: RoleQueryDto) {
+  async findAll(_query: RoleQueryDto) {
     return this.prisma.role.findMany({
       select: defaultRoleSelect,
     });

@@ -1,4 +1,4 @@
-import { IsArray, IsUUID, IsOptional } from 'class-validator';
+import { IsArray, IsUUID } from 'class-validator';
 import { ApiProperty } from '@nestjs/swagger';
 
 export class AssignPermissionsDto {
