@@ -10,6 +10,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { UsersModule } from './users/users.module';
 import { RoleModule } from './role/role.module';
+import { PermissionModule } from './permission/permission.module';
 
 @Module({
   imports: [
@@ -19,6 +20,7 @@ import { RoleModule } from './role/role.module';
     AuthModule,
     UsersModule,
     RoleModule,
+    PermissionModule,
   ],
   controllers: [AppController],
   providers: [
