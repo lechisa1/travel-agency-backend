@@ -16,6 +16,9 @@ import { AirlineModule } from './airline/airline.module';
 import { FlightBookingsModule } from './flight-bookings/flight-bookings.module';
 import { VisaModule } from './visa/visa.module';
 import { DocumentsModule } from './documents/documents.module';
+import { HotelBookingsModule } from './hotel-bookings/hotel-bookings.module';
+import { HotelPartnersModule } from './hotel-partners/hotel-partners.module';
+import { RoomTypesModule } from './room-types/room-types.module';
 
 @Module({
   imports: [
@@ -31,6 +34,9 @@ import { DocumentsModule } from './documents/documents.module';
     FlightBookingsModule,
     VisaModule,
     DocumentsModule,
+    HotelBookingsModule,
+    HotelPartnersModule,
+    RoomTypesModule,
   ],
   controllers: [AppController],
   providers: [
