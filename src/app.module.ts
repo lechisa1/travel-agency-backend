@@ -13,6 +13,9 @@ import { RoleModule } from './role/role.module';
 import { PermissionModule } from './permission/permission.module';
 import { CustomersModule } from './customers/customers.module';
 import { AirlineModule } from './airline/airline.module';
+import { FlightBookingsModule } from './flight-bookings/flight-bookings.module';
+import { VisaModule } from './visa/visa.module';
+import { DocumentsModule } from './documents/documents.module';
 
 @Module({
   imports: [
@@ -25,6 +28,9 @@ import { AirlineModule } from './airline/airline.module';
     PermissionModule,
     CustomersModule,
     AirlineModule,
+    FlightBookingsModule,
+    VisaModule,
+    DocumentsModule,
   ],
   controllers: [AppController],
   providers: [
