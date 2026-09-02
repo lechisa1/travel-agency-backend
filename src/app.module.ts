@@ -19,6 +19,9 @@ import { DocumentsModule } from './documents/documents.module';
 import { HotelBookingsModule } from './hotel-bookings/hotel-bookings.module';
 import { HotelPartnersModule } from './hotel-partners/hotel-partners.module';
 import { RoomTypesModule } from './room-types/room-types.module';
+import { PackageCategoriesModule } from './package-categories/package-categories.module';
+import { PackagesModule } from './packages/packages.module';
+import { PackageBookingsModule } from './package-bookings/package-bookings.module';
 
 @Module({
   imports: [
@@ -37,6 +40,9 @@ import { RoomTypesModule } from './room-types/room-types.module';
     HotelBookingsModule,
     HotelPartnersModule,
     RoomTypesModule,
+    PackageCategoriesModule,
+    PackagesModule,
+    PackageBookingsModule,
   ],
   controllers: [AppController],
   providers: [

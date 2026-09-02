@@ -2,26 +2,26 @@ import { IsOptional, IsInt, Min, IsString, IsBoolean } from 'class-validator';
 import { Type, Transform } from 'class-transformer';
 import { ApiProperty } from '@nestjs/swagger';
 export class QueryUserDto {
-  @ApiProperty({ example: 1 })
+  @ApiProperty({ example: 1, required: false })
   @IsOptional()
   @Type(() => Number)
   @IsInt()
   @Min(1)
   page?: number = 1;
 
-  @ApiProperty({ example: 10 })
+  @ApiProperty({ example: 10, required: false })
   @IsOptional()
   @Type(() => Number)
   @IsInt()
   @Min(1)
   limit?: number = 10;
 
-  @ApiProperty({ example: 'search-term' })
+  @ApiProperty({ example: 'search-term', required: false })
   @IsOptional()
   @IsString()
   search?: string;
 
-  @ApiProperty({ example: true })
+  @ApiProperty({ example: true, required: false })
   @IsOptional()
   @Transform(({ value }) => value === 'true' || value === true)
   @IsBoolean()
