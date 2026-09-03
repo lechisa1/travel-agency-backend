@@ -22,6 +22,9 @@ import { RoomTypesModule } from './room-types/room-types.module';
 import { PackageCategoriesModule } from './package-categories/package-categories.module';
 import { PackagesModule } from './packages/packages.module';
 import { PackageBookingsModule } from './package-bookings/package-bookings.module';
+import { CalendarEventTypesModule } from './calendar-event-types/calendar-event-types.module';
+import { CalendarEventsModule } from './calendar-events/calendar-events.module';
+import { StaffSchedulesModule } from './staff-schedules/staff-schedules.module';
 
 @Module({
   imports: [
@@ -43,6 +46,9 @@ import { PackageBookingsModule } from './package-bookings/package-bookings.modul
     PackageCategoriesModule,
     PackagesModule,
     PackageBookingsModule,
+    CalendarEventTypesModule,
+    CalendarEventsModule,
+    StaffSchedulesModule,
   ],
   controllers: [AppController],
   providers: [
