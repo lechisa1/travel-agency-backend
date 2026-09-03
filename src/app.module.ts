@@ -25,6 +25,15 @@ import { PackageBookingsModule } from './package-bookings/package-bookings.modul
 import { CalendarEventTypesModule } from './calendar-event-types/calendar-event-types.module';
 import { CalendarEventsModule } from './calendar-events/calendar-events.module';
 import { StaffSchedulesModule } from './staff-schedules/staff-schedules.module';
+import { GroupBookingsModule } from './group-bookings/group-bookings.module';
+import { TransferTypesModule } from './transfer-types/transfer-types.module';
+import { TransfersModule } from './transfers/transfers.module';
+import { CompanyProfileModule } from './company-profile/company-profile.module';
+import { TaxRulesModule } from './tax-rules/tax-rules.module';
+import { EmailConfigModule } from './email-config/email-config.module';
+import { CurrencySettingModule } from './currency-setting/currency-setting.module';
+import { EmailTemplatesModule } from './email-templates/email-templates.module';
+import { SmsTemplatesModule } from './sms-templates/sms-templates.module';
 
 @Module({
   imports: [
@@ -49,6 +58,15 @@ import { StaffSchedulesModule } from './staff-schedules/staff-schedules.module';
     CalendarEventTypesModule,
     CalendarEventsModule,
     StaffSchedulesModule,
+    GroupBookingsModule,
+    TransferTypesModule,
+    TransfersModule,
+    CompanyProfileModule,
+    TaxRulesModule,
+    EmailConfigModule,
+    CurrencySettingModule,
+    EmailTemplatesModule,
+    SmsTemplatesModule,
   ],
   controllers: [AppController],
   providers: [
