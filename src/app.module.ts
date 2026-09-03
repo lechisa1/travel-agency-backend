@@ -34,6 +34,9 @@ import { EmailConfigModule } from './email-config/email-config.module';
 import { CurrencySettingModule } from './currency-setting/currency-setting.module';
 import { EmailTemplatesModule } from './email-templates/email-templates.module';
 import { SmsTemplatesModule } from './sms-templates/sms-templates.module';
+import { SuppliersModule } from './suppliers/suppliers.module';
+import { FleetModule } from './vehicles/fleet.module';
+import { ResourcesModule } from './resources/resources.module';
 
 @Module({
   imports: [
@@ -67,6 +70,9 @@ import { SmsTemplatesModule } from './sms-templates/sms-templates.module';
     CurrencySettingModule,
     EmailTemplatesModule,
     SmsTemplatesModule,
+    SuppliersModule,
+    FleetModule,
+    ResourcesModule,
   ],
   controllers: [AppController],
   providers: [
